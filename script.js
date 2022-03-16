@@ -50,7 +50,7 @@ const generatePostsTemplate = posts =>
 const addPostIntoDOM = async() => {
     try {
         const posts = await getPost();
-        const postsTemplate = generatePostsTemplate(posts)
+        const postsTemplate = generatePostsTemplate(posts);
         postsContainer.innerHTML += postsTemplate;
     } catch (error) {
         console.log(error.message);
